@@ -35,5 +35,7 @@ jobs:
           echo Add other actions to build,
           cat index.html
           echo test, and deploy your project.
+          echo "${{ variables.ENV_FILE }}" > .env
+          cat .env
           ls -la
           
